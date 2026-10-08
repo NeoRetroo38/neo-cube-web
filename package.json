@@ -1,0 +1,50 @@
+{
+  "name": "@neoretroo38/neo-cube-web",
+  "version": "0.1.0",
+  "description": "Framework-agnostic geometry and SVG helpers for public Neo Cube measurements.",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoRetroo38/neo-cube-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeoRetroo38/neo-cube-web/issues"
+  },
+  "homepage": "https://github.com/NeoRetroo38/neo-cube-web#readme",
+  "keywords": [
+    "3d",
+    "cube",
+    "geometry",
+    "svg",
+    "typescript",
+    "visualization"
+  ],
+  "author": "NeoRetroo38",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
